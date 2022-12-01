@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family:Arial, Helvetica, sans-serif;
+    background: url(../img/fondito.PNG);
+    background-position: center;
+    background-size:cover ;
+    backdrop-filter:blur(10px) ;
+}
+.form-body {
+    width: 400px;
+    min-width: 300px;
+    border-radius: 10px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border: solid #fff;
+    margin: 10px;
+    background-color: rgb(26, 22, 22);
+}
+.form-body img {
+    width: 150px;
+    display: block;
+    margin: 20px auto;
+}
+/*Modifico el texto*/
+.text {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    margin-bottom: 25px;
+}
+/*Modifico los imputs*/
+.form-body input {
+    display: block;
+    margin: auto;
+    height: 40px;
+    width: 75%;
+    padding-left: 10px;
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(2, 2, 2);
+    border-radius: 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: solid rgb(255, 255, 255);
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 1rem;
+    outline: none;
+}
+/*Dejo un empacio entre ambos imputs*/
+.form-body input[type="password"]{
+    margin-top: 20px;
+}
+/*Modifico el placeholder*/
+::placeholder {
+    font-size: 1rem;
+    color:solid rgb(0, 0, 0);
+}
+/*Animacion para ambos imputs*/
+.form-body input:hover{
+    transition: .5s;
+    border: 1px solid  rgb(255, 0, 0) ;
+}
+/*Modifico el boton de iniciar sesion*/
+.form-body button{
+    display: block;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    height: 35px;
+    width: 75%;
+    background-color: brown;
+    color: #fff;
+    border-radius: 2px;
+    cursor: pointer;
+    outline: none;
+    transition: all .5s ease;
+}
+.form-body button:hover{
+    transition: .5s;
+    border: 1px solid  rgb(255, 255, 255);
+}
